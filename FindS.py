@@ -17,7 +17,7 @@ class FindS:
                 for m in range(len(self.h_ds[n])):
                     if self.h0[m] != self.h_ds[n][m]:
                         self.h0[m] = '?'
-        return self.h0
+        return self.h0[:-1]
 
 specific = FindS(students_skill).mostSpecific()
 print(specific)
